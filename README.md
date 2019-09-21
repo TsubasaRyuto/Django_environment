@@ -51,8 +51,9 @@ Successfully installed Django-2.2.5 pytz-2019.2 sqlparse-0.3.0
 
 ## Generate your Django project
 ### Create project
-You should run the `django-admin startproject [project name] .`. Don't forget to add the period (or dot) . at the end!
-For this tutorial we will be using a [sample_project] in project name. So you should change it.
+You should run the `django-admin startproject [project name] .`.
+Don't forget to add the period (or dot) . at the end!
+For this tutorial, we will be using a [sample_project] as project name, so you should change it.
 ``` commando-line
 $ django-admin startproject sample_project .
 ```

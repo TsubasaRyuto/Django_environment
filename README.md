@@ -52,10 +52,28 @@ Successfully installed Django-2.2.5 pytz-2019.2 sqlparse-0.3.0
 ## Generate your Django project
 ### Create project
 You should run the `django-admin startproject [project name] .`. Don't forget to add the period (or dot) . at the end!
-For this tutorial we will be using a [sample_project] in project name. So you should change it
+For this tutorial we will be using a [sample_project] in project name. So you should change it.
 ``` commando-line
 $ django-admin startproject sample_project .
 ```
 
+## Start the web server
+You need to be in the directory that contains the `manage.py` file (the sample_app directory). 
+In the console, we can start the web server by running `python manage.py runserver`
+``` command-line
+python manage.py runserver
+```
 
-Installing packages with requirements
+Also, you need to check that your website is running. Open your browser and enter this address.
+```
+http://127.0.0.1:8000/
+```
+
+> ## note
+> Maybe, you got this message
+> ```
+> You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, > >contenttypes, sessions.
+>Run 'python manage.py migrate' to apply them.
+> ```
+> You don't need to worry this message but you should run the `python manage.py migrate` in case your app need database.
+
